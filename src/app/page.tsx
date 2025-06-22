@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="relative w-full py-20 md:py-32 lg:py-40 bg-accent overflow-hidden">
+        <section className="relative w-full py-20 md:py-32 lg:py-40 bg-accent/20 overflow-hidden">
           <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(to_bottom,white,transparent)] dark:bg-grid-slate-700/40 dark:[mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
           <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
             <div className="max-w-3xl mx-auto">
@@ -43,7 +43,7 @@ export default function Home() {
                     <div className="ml-4">
                       <p className="font-semibold">Alice</p>
                       <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />)}
+                        {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-primary fill-primary" />)}
                       </div>
                     </div>
                   </div>
@@ -58,8 +58,8 @@ export default function Home() {
                     <div className="ml-4">
                       <p className="font-semibold">Bob</p>
                        <div className="flex items-center">
-                        {[...Array(4)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />)}
-                        {[...Array(1)].map((_, i) => <Star key={i} className="w-4 h-4 text-gray-300" />)}
+                        {[...Array(4)].map((_, i) => <Star key={i} className="w-4 h-4 text-primary fill-primary" />)}
+                        {[...Array(1)].map((_, i) => <Star key={i} className="w-4 h-4 text-muted-foreground/30" />)}
                       </div>
                     </div>
                   </div>
@@ -74,7 +74,7 @@ export default function Home() {
                     <div className="ml-4">
                       <p className="font-semibold">Catherine</p>
                       <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />)}
+                        {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 text-primary fill-primary" />)}
                       </div>
                     </div>
                   </div>

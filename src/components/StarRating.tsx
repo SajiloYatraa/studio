@@ -41,8 +41,8 @@ export function StarRating({ rating, onRatingChange, readOnly = false, className
             'w-6 h-6 stroke-1',
             !readOnly && 'cursor-pointer',
             (hoverRating >= index || rating >= index)
-              ? 'text-yellow-400 fill-yellow-400'
-              : 'text-gray-300'
+              ? 'text-primary fill-primary'
+              : 'text-muted-foreground/30'
           )}
           onMouseEnter={() => handleMouseEnter(index)}
           onMouseLeave={handleMouseLeave}
