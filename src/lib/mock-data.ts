@@ -1,4 +1,4 @@
-import type { Review } from './types';
+import type { Review, ContactMessage } from './types';
 
 export const mockReviews: Review[] = [
   {
@@ -76,4 +76,21 @@ export const mockReviews: Review[] = [
     status: 'pending',
     communityFeedback: 'This sounds amazing! Can you specify which batch you are reviewing? Also, any thoughts on its versatility across seasons?'
   },
+];
+
+export const mockContactMessages: ContactMessage[] = [
+  {
+    id: 'msg1',
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    message: 'I have a question about an order. Can you please help?',
+    timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(), // 2 days ago
+  },
+  {
+    id: 'msg2',
+    name: 'Jane Smith',
+    email: 'jane.smith@example.com',
+    message: 'I love your platform! Just wanted to share some feedback on the review process. It would be great if we could edit our reviews after submitting.',
+    timestamp: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(), // 1 day ago
+  }
 ];

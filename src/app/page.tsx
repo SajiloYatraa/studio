@@ -85,10 +85,30 @@ export default function Home() {
             </div>
           </div>
         </section>
+        
+        <section className="py-16 md:py-24 bg-muted/50">
+          <div className="container mx-auto px-4 md:px-6 text-center">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Get In Touch</h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/70">
+              We'd love to hear from you! Whether you have a question about features, trials, pricing, or anything else, our team is ready to answer all your questions.
+            </p>
+            <div className="mt-8">
+              <Button asChild size="lg">
+                <Link href="/contact">Contact Us</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
       </main>
       <footer className="bg-muted py-6">
-        <div className="container mx-auto px-4 md:px-6 text-center text-sm text-muted-foreground">
+        <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Scentify. All rights reserved.</p>
+          <div className="flex gap-4 mt-4 md:mt-0">
+            <Link href="/discover" className="hover:text-primary">Discover</Link>
+            <Link href="/contact" className="hover:text-primary">Contact</Link>
+            <Link href="/admin" className="hover:text-primary">Admin</Link>
+          </div>
         </div>
       </footer>
     </div>

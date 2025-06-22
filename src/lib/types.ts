@@ -13,3 +13,11 @@ export interface Review {
   status: 'pending' | 'approved' | 'rejected';
   communityFeedback?: string;
 }
+
+export interface ContactMessage {
+  id: string;
+  name: string;
+  email: string;
+  message: string;
+  timestamp: string;
+}
