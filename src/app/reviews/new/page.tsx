@@ -1,7 +1,15 @@
 import ReviewForm from "@/components/ReviewForm";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { getUserSession } from "@/lib/auth";
+import { redirect } from 'next/navigation';
 
-export default function NewReviewPage() {
+export default async function NewReviewPage() {
+  const session = await getUserSession();
+
+  if (!session) {
+    redirect('/login');
+  }
+
   return (
     <Card className="w-full max-w-2xl shadow-lg">
       <CardHeader>
