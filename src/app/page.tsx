@@ -103,7 +103,7 @@ export default function Home() {
       </main>
       <footer className="bg-muted py-6">
         <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Scentify. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} RateYourPerfume. All rights reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="/discover" className="hover:text-primary">Discover</Link>
             <Link href="/contact" className="hover:text-primary">Contact</Link>

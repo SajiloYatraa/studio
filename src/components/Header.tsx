@@ -24,7 +24,7 @@ export default function Header() {
         <div className="mr-auto flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2 font-headline text-xl font-bold text-primary">
             <Sparkles className="h-6 w-6" />
-            Scentify
+            RateYourPerfume
           </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">

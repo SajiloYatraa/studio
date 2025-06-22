@@ -8,7 +8,7 @@ export default function AuthLayout({ children, title }: { children: React.ReactN
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2 font-headline text-3xl font-bold text-primary">
             <Sparkles className="h-8 w-8" />
-            Scentify
+            RateYourPerfume
           </Link>
           <h1 className="mt-4 font-headline text-2xl text-foreground">{title}</h1>
         </div>
