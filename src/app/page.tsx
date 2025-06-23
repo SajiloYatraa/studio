@@ -10,14 +10,27 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="relative w-full py-20 md:py-32 lg:py-40 bg-accent/20 overflow-hidden">
-          <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(to_bottom,white,transparent)] dark:bg-grid-slate-700/40 dark:[mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
-          <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
+        <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 z-10 bg-black/50" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute z-0 w-full h-full object-cover"
+          >
+            <source
+              src="https://videos.pexels.com/video-files/853875/853875-hd.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div className="container mx-auto px-4 md:px-6 text-center relative z-20">
             <div className="max-w-3xl mx-auto">
-              <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary">
+              <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
                 Find Your Perfect Scent
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-foreground/80">
+              <p className="mt-6 text-lg md:text-xl text-neutral-200">
                 Discover, review, and share your favorite perfumes with a community of fragrance lovers.
               </p>
               <div className="mt-8">
