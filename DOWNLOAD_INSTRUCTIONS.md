@@ -38,4 +38,25 @@ First, go to [GitHub.com](https://github.com) and create a **new, empty reposito
 5.  **Add Remote:** Your local Git repository now needs to know where your GitHub repository is. Look for an option to "Add Remote" or "Push to...". It will likely be in a `...` menu within the Source Control panel. Paste the GitHub repository URL you copied earlier.
 6.  **Push Changes:** After adding the remote, find the "Push" command (it might be an icon with an up arrow ⬆️ or an option in the `...` menu). This will upload all your committed files to your GitHub repository.
 
-I hope this helps you get your code safely into GitHub! Let me know if you want to work on any more code changes.
+---
+
+## How to Deploy Your Website (Go Live)
+
+Pushing your code to GitHub is great for storage, but to make your website publicly accessible, you need to "deploy" it to a hosting provider.
+
+### The Challenge with GitHub Pages
+
+While it's possible to host some sites on GitHub Pages, it is **not recommended for this specific application**. GitHub Pages is designed for *static* sites (simple HTML, CSS, JavaScript files). Your app is a *dynamic* Next.js application that uses server-side features like:
+-   AI-powered review enhancement
+-   Contact form submissions
+-   Admin panel functionality
+
+These features require a server to run, and GitHub Pages does not provide one. Deploying this app to GitHub Pages would break these key features.
+
+### Recommended Hosting: Firebase App Hosting
+
+Your project is already configured for **Firebase App Hosting**, which is the ideal solution. It's designed to run modern web apps like yours with full support for all its dynamic features.
+
+The `apphosting.yaml` file in your project contains the configuration for this. The deployment process is typically managed through the Firebase console or the Firebase CLI after you download your code.
+
+I hope this helps you get your code safely into GitHub and deployed for the world to see! Let me know if you want to work on any more code changes.
